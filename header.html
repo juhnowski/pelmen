@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html id='sp🚧' lang='en'>
+<head>
+<script src='https://www.googleoptimize.com/optimize.js?id=OPT-WBMTWG6' type='text/javascript'></script>
+<link href='/manifest.json' id='site-manifest' rel='manifest'>
+<meta charset='utf-8'>
+<meta content='Build a Web App Using Functional Programming Principles with Elm - Elm, a front-end functional programming language for web apps' name='description'>
+<meta content='Build a Web App Using Functional Programming Principles with Elm' name='title'>
+<meta content='https://www.sitepoint.com/wp-content/themes/sitepoint/assets/images/icon.sitepoint.png' name='image'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+<meta name='sp:user'>
+<meta name='sp:user:id'>
+<meta name='sp:user:member'>
+<title>Build a Web App Using Functional Programming Principles with Elm - SitePoint Premium</title>
+<link href='/favicons/32x32.png' rel='icon' type='image/png'>
+<link href='/favicons/48x48.png' rel='apple-touch-icon' sizes='48x48' type='image/png'>
+<link href='/favicons/72x72.png' rel='apple-touch-icon' sizes='72x72' type='image/png'>
+<link href='/favicons/96x96.png' rel='apple-touch-icon' sizes='96x96' type='image/png'>
+<link href='/favicons/144x144.png' rel='apple-touch-icon' sizes='144x144' type='image/png'>
+<link href='/favicons/192x192.png' rel='apple-touch-icon' sizes='192x192' type='image/png'>
+<link href='/favicons/256x256.png' rel='apple-touch-icon' sizes='256x256' type='image/png'>
+<link href='/favicons/384x384.png' rel='apple-touch-icon' sizes='384x384' type='image/png'>
+<link href='/favicons/512x512.png' rel='apple-touch-icon' sizes='512x512' type='image/png'>
+<link as='style' crossorigin='anonymous' href='https://pro.fontawesome.com/releases/v5.11.2/css/all.css?display=swap' integrity='sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx' rel='preload'>
+<link crossorigin='anonymous' href='https://pro.fontawesome.com/releases/v5.11.2/css/all.css?display=swap' integrity='sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx' rel='stylesheet'>
+<link as='font' crossorigin='anonymous' href='https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2?display=swap' integrity='sha384-ou7S2dMEbMoBldKLX/7t653mpVth/LBxyjvdNsYIvdQRMs7CM2bNL2jrsPSLw2G1' rel='preload'>
+<link rel="stylesheet" media="screen" href="https://d39ayi7b6b3haj.cloudfront.net/premium/assets/styles-f072a2f9c9900ec03d4622edb9eacb6c4bc1c7393049561463cdb8ead818a36e.css" />
+<link rel="stylesheet" media="screen" href="https://d39ayi7b6b3haj.cloudfront.net/premium/assets/dynamic-8c65d1d023e90ffbca08e7c626d8ec9529b361913909d30c1bed3857e88bd46d.css" />
+
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="KVoBEj7r4J3MqDtuun9S2Xsn/XqJbjGxKRKQS4Gug6+UhIlRKJaKtm5tHNtZncT1mygfJYVX5CtcR2uBvsr/7A==" />
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="https://d39ayi7b6b3haj.cloudfront.net/premium/assets/html5shiv-50b4798dc290f9ad0e16a62ea7500606f569133edc284090ca1e068f66e5d506.js"></script>
+<![endif]-->
+<script async='' type='text/javascript'>
+// Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0)
+(function () {
+  var host = "www.sitepoint.com";
+  var element = document.createElement("script");
+  var firstScript = document.getElementsByTagName("script")[0];
+  var url = "https://quantcast.mgr.consensu.org".concat(
+    "/choice/",
+    "DsckBJsAJpkVK",
+    "/",
+    host,
+    "/choice.js"
+  );
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = "text/javascript";
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = "__tcfapiLocator";
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!win.frames[TCF_LOCATOR_NAME];
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement("iframe");
+
+          iframe.style.cssText = "display:none";
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === "setGdprApplies") {
+        if (args.length > 3 && args[2] === 2 && typeof args[3] === "boolean") {
+          gdprApplies = args[3];
+          if (typeof args[2] === "function") {
+            args[2]("set", true);
+          }
+        }
+      } else if (args[0] === "ping") {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: "stub",
+        };
+
+        if (typeof args[2] === "function") {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === "string";
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function (retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId,
+              },
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, "*");
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener("message", postMessageEventHandler, false);
+    }
+  }
+
+  makeStub();
+
+  var uspStubFunction = function () {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function () {
+        if (typeof window.__uspapi !== "undefined") {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function () {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn("USP is not accessible");
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === "undefined") {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+
+<!-- / We should strive to load only the bare essential Javascript in head, please use javascript_body -->
+<!-- / The code below are not loaded in checkout page -->
+<script defer='' src='https://static.codepen.io/assets/embed/ei.js' type='text/javascript'></script>
+<script defer='' src='https://www.google.com/recaptcha/api.js'></script>
+<script>
+  const currentUser = "";
+  const currentUserFullName = "";
+  const currentUserMemberStatus = "";
+  const currentUserMembershipType = "Free";
+  const currentUserMembership = "none";
+  const currentUserTrialling = "";
+  const currentUserCreated = "";
+  const currentUserEmail = "";
+  
+  const DEFAULT_PLAN = Object.freeze({
+    MONTHLY: Object.freeze({
+      link: "/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_source=premium",
+      priceCents: "900"
+    }),
+    YEARLY: Object.freeze({
+      link: "/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzY3?ref_source=premium",
+      priceCents: "7200"
+    })
+  });
+</script>
+<script src="https://d39ayi7b6b3haj.cloudfront.net/premium/assets/modules/loader-e029e91c9de1b68193ab23944aba3a36a3842b97bdf127f0735f1702966a2faa.js"></script>
+
+
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KL8PMMW');
+
+
+</script>
+<script defer='' src='https://www.google-analytics.com/analytics.js'></script>
+<noscript>
+<iframe defer='' height='0' src='https://www.googletagmanager.com/ns.html?id=GTM-KL8PMMW' style='display:none;visibility:hidden' width='0'></iframe>
+</noscript>
+<meta content='https://www.sitepoint.com/premium/courses/build-a-web-app-using-functional-programming-principles-with-elm-2940' property='og:url'>
+<meta content='Build a Web App Using Functional Programming Principles with Elm
+' property='og:title'>
+<meta content='Build a Web App Using Functional Programming Principles with Elm - Elm, a front-end functional programming language for web apps
+' property='og:description'>
+<meta content='https://d2sis3lil8ndrq.cloudfront.net/courses/6984d63d-54c4-4d4f-aec6-22e677defd18.png' property='og:image'>
+<meta content='videos.other' property='og:type'>
+<meta content='SitePoint Premium' property='og:site_name'>
+<meta content='summary' name='twitter:card'>
+<meta content='@sitepointdotcom' name='twitter:site'>
+<meta content='Build a Web App Using Functional Programming Principles with Elm
+' name='twitter:title'>
+<meta content='Build a Web App Using Functional Programming Principles with Elm - Elm, a front-end functional programming language for web apps
+' name='twitter:description'>
+<meta content='https://d2sis3lil8ndrq.cloudfront.net/courses/6984d63d-54c4-4d4f-aec6-22e677defd18.png' name='twitter:image:src'>
+
+
+<link href='https://www.sitepoint.com/premium/courses/build-a-web-app-using-functional-programming-principles-with-elm-2940' rel='canonical'>
+
+</head>
+<body>
+<div class='l-d-f l-p-fix l-w-100' id='header-bar'>
+<smart-bar></smart-bar>
+<nav class='margin-offset-on l-d-f l-w-100' id='navigation-bar'>
+<div class='l-d-f l-w-100 l-w-3col--3col l-w-4col--4col l-jc-sb l-mh-auto'>
+<section class='l-d-f l-ai-str l-jc-sta l-gs-ph2 l-gs-ph1--2col'>
+<a class="l-d-f l-as-cen l-b-n" href="/"><svg class='sp-logo' viewbox='0 0 123 27'>
+<g fill-rule='evenodd'>
+<path d='M31.36,16.75 C31.56,17.07 31.82,17.31 32.14,17.50 C32.46,17.68 32.82,17.82 33.23,17.89 C33.63,17.97 34.05,18.01 34.48,18.01 C34.81,18.01 35.16,17.99 35.52,17.94 C35.89,17.89 36.22,17.81 36.53,17.68 C36.83,17.55 37.08,17.36 37.28,17.11 C37.48,16.87 37.58,16.55 37.58,16.17 C37.58,15.64 37.37,15.24 36.96,14.97 C36.55,14.69 36.03,14.47 35.41,14.31 C34.79,14.14 34.12,13.99 33.39,13.85 C32.66,13.71 31.99,13.52 31.37,13.27 C30.75,13.03 30.23,12.68 29.82,12.23 C29.41,11.78 29.20,11.16 29.20,10.36 C29.20,9.73 29.34,9.20 29.63,8.75 C29.92,8.30 30.30,7.94 30.75,7.66 C31.20,7.38 31.72,7.17 32.29,7.03 C32.86,6.90 33.42,6.83 33.99,6.83 C34.71,6.83 35.38,6.89 35.99,7.01 C36.61,7.13 37.15,7.34 37.62,7.63 C38.09,7.93 38.46,8.33 38.75,8.83 C39.03,9.34 39.19,9.96 39.24,10.72 L37.13,10.72 C37.10,10.32 36.99,9.98 36.81,9.72 C36.63,9.46 36.40,9.25 36.12,9.08 C35.84,8.92 35.53,8.81 35.19,8.74 C34.85,8.66 34.51,8.63 34.16,8.63 C33.84,8.63 33.53,8.65 33.20,8.70 C32.88,8.75 32.59,8.83 32.32,8.95 C32.06,9.07 31.84,9.23 31.68,9.43 C31.51,9.63 31.43,9.89 31.43,10.21 C31.43,10.56 31.56,10.86 31.82,11.09 C32.07,11.32 32.40,11.51 32.80,11.66 C33.19,11.82 33.64,11.95 34.13,12.05 C34.63,12.15 35.13,12.26 35.62,12.37 C36.15,12.49 36.67,12.62 37.17,12.78 C37.67,12.94 38.12,13.15 38.51,13.42 C38.90,13.68 39.21,14.01 39.45,14.41 C39.69,14.81 39.81,15.31 39.81,15.90 C39.81,16.66 39.65,17.28 39.33,17.77 C39.01,18.27 38.58,18.67 38.06,18.98 C37.54,19.28 36.96,19.49 36.30,19.61 C35.65,19.73 35.00,19.79 34.36,19.79 C33.65,19.79 32.97,19.72 32.32,19.58 C31.68,19.43 31.11,19.20 30.61,18.87 C30.12,18.54 29.72,18.11 29.42,17.57 C29.13,17.03 28.96,16.38 28.93,15.61 L31.03,15.61 C31.05,16.06 31.16,16.44 31.36,16.75' id='Fill-1'></path>
+<path d='M42.27,7.12 L44.37,7.12 L44.37,19.53 L42.27,19.53 L42.27,7.12 Z' id='Fill-2'></path>
+<path d='M53.13,7.12 L53.13,8.92 L50.57,8.92 L50.57,16.62 C50.57,16.86 50.59,17.05 50.63,17.20 C50.67,17.34 50.75,17.46 50.87,17.54 C50.99,17.62 51.15,17.67 51.35,17.69 C51.56,17.71 51.83,17.73 52.16,17.73 L53.13,17.73 L53.13,19.53 L51.51,19.53 C50.97,19.53 50.50,19.49 50.11,19.42 C49.72,19.35 49.41,19.22 49.17,19.02 C48.93,18.83 48.75,18.56 48.64,18.21 C48.52,17.86 48.46,17.39 48.46,16.81 L48.46,8.92 L46.28,8.92 L46.28,7.12 L48.46,7.12 L48.46,3.39 L50.57,3.39 L50.57,7.12 L53.13,7.12' id='Fill-3'></path>
+<path d='M64.53,18.73 C63.57,19.44 62.36,19.79 60.91,19.79 C59.89,19.79 59.00,19.63 58.25,19.31 C57.49,18.99 56.86,18.54 56.35,17.97 C55.84,17.39 55.45,16.70 55.20,15.90 C54.94,15.10 54.80,14.23 54.76,13.29 C54.76,12.34 54.91,11.48 55.21,10.69 C55.51,9.91 55.92,9.23 56.46,8.65 C57.00,8.08 57.63,7.63 58.37,7.31 C59.11,6.99 59.91,6.83 60.79,6.83 C61.93,6.83 62.87,7.05 63.63,7.51 C64.38,7.97 64.98,8.55 65.44,9.25 C65.89,9.96 66.20,10.73 66.38,11.56 C66.55,12.39 66.62,13.18 66.59,13.93 L56.99,13.93 C56.98,14.48 57.04,14.99 57.19,15.48 C57.34,15.97 57.58,16.40 57.91,16.78 C58.24,17.16 58.66,17.46 59.18,17.68 C59.69,17.90 60.29,18.01 60.98,18.01 C61.88,18.01 62.61,17.82 63.18,17.41 C63.75,17.02 64.13,16.41 64.31,15.59 L66.39,15.59 C66.11,16.98 65.49,18.03 64.53,18.73 L64.53,18.73 Z M64.02,10.76 C63.83,10.33 63.58,9.96 63.25,9.65 C62.93,9.34 62.55,9.09 62.11,8.90 C61.68,8.72 61.19,8.63 60.66,8.63 C60.12,8.63 59.62,8.72 59.19,8.90 C58.75,9.09 58.37,9.34 58.06,9.66 C57.75,9.98 57.50,10.35 57.32,10.78 C57.13,11.20 57.03,11.65 56.99,12.13 L64.36,12.13 C64.32,11.65 64.21,11.20 64.02,10.76 L64.02,10.76 Z' id='Fill-4'></path>
+<path d='M70.95,7.12 L70.95,8.80 L71.00,8.80 C71.35,8.11 71.89,7.61 72.64,7.30 C73.38,6.98 74.20,6.83 75.09,6.83 C76.09,6.83 76.95,7.00 77.68,7.36 C78.42,7.71 79.03,8.18 79.52,8.78 C80.01,9.38 80.37,10.08 80.62,10.86 C80.87,11.65 80.99,12.48 80.99,13.36 C80.99,14.24 80.87,15.07 80.63,15.85 C80.39,16.64 80.03,17.32 79.54,17.91 C79.06,18.49 78.44,18.95 77.71,19.29 C76.97,19.62 76.12,19.79 75.14,19.79 C74.83,19.79 74.48,19.76 74.09,19.70 C73.70,19.63 73.32,19.53 72.94,19.38 C72.56,19.24 72.20,19.04 71.86,18.79 C71.52,18.55 71.23,18.24 71.00,17.87 L70.95,17.87 L70.95,24.26 L68.84,24.26 L68.84,7.12 L70.95,7.12 L70.95,7.12 Z M78.53,11.52 C78.37,10.97 78.13,10.48 77.81,10.04 C77.49,9.61 77.07,9.27 76.57,9.01 C76.06,8.76 75.47,8.63 74.79,8.63 C74.08,8.63 73.48,8.76 72.98,9.04 C72.49,9.31 72.08,9.67 71.77,10.10 C71.46,10.55 71.23,11.05 71.09,11.60 C70.95,12.17 70.88,12.73 70.88,13.31 C70.88,13.92 70.95,14.51 71.10,15.07 C71.25,15.64 71.48,16.14 71.81,16.57 C72.13,17.01 72.55,17.35 73.06,17.62 C73.57,17.88 74.19,18.01 74.92,18.01 C75.65,18.01 76.25,17.88 76.74,17.61 C77.23,17.34 77.62,16.98 77.92,16.53 C78.22,16.08 78.43,15.57 78.56,14.99 C78.70,14.41 78.76,13.82 78.76,13.21 C78.76,12.64 78.68,12.07 78.53,11.52 L78.53,11.52 Z' id='Fill-5'></path>
+<path d='M83.17,10.78 C83.44,9.98 83.84,9.30 84.36,8.71 C84.89,8.13 85.55,7.67 86.33,7.33 C87.10,7.00 87.99,6.83 89.00,6.83 C90.03,6.83 90.92,7.00 91.69,7.33 C92.46,7.67 93.11,8.13 93.64,8.71 C94.17,9.30 94.56,9.98 94.83,10.78 C95.09,11.57 95.23,12.42 95.23,13.33 C95.23,14.25 95.09,15.09 94.83,15.88 C94.56,16.66 94.17,17.35 93.64,17.93 C93.11,18.52 92.46,18.97 91.69,19.30 C90.92,19.63 90.03,19.79 89.00,19.79 C87.99,19.79 87.10,19.63 86.33,19.30 C85.55,18.97 84.89,18.52 84.36,17.93 C83.84,17.35 83.44,16.66 83.17,15.88 C82.91,15.09 82.78,14.25 82.78,13.33 C82.78,12.42 82.91,11.57 83.17,10.78 L83.17,10.78 Z M85.32,15.34 C85.53,15.92 85.81,16.41 86.18,16.80 C86.54,17.19 86.96,17.49 87.45,17.70 C87.94,17.91 88.46,18.01 89.00,18.01 C89.55,18.01 90.06,17.91 90.55,17.70 C91.04,17.49 91.46,17.19 91.83,16.80 C92.19,16.41 92.48,15.92 92.68,15.34 C92.89,14.75 92.99,14.09 92.99,13.33 C92.99,12.58 92.89,11.91 92.68,11.33 C92.48,10.75 92.19,10.25 91.83,9.85 C91.46,9.45 91.04,9.15 90.55,8.94 C90.06,8.73 89.55,8.63 89.00,8.63 C88.46,8.63 87.94,8.73 87.45,8.94 C86.96,9.15 86.54,9.45 86.18,9.85 C85.81,10.25 85.53,10.75 85.32,11.33 C85.11,11.91 85.01,12.58 85.01,13.33 C85.01,14.09 85.11,14.75 85.32,15.34 L85.32,15.34 Z' id='Fill-6'></path>
+<path d='M97.83,7.12 L99.94,7.12 L99.94,19.53 L97.83,19.53 L97.83,7.12 Z' id='Fill-7'></path>
+<path d='M105.19,7.12 L105.19,9.08 L105.24,9.08 C106.12,7.58 107.51,6.83 109.41,6.83 C110.25,6.83 110.95,6.94 111.51,7.16 C112.08,7.39 112.53,7.70 112.88,8.10 C113.23,8.50 113.47,8.98 113.61,9.53 C113.75,10.08 113.82,10.69 113.82,11.36 L113.82,19.53 L111.71,19.53 L111.71,11.12 C111.71,10.36 111.48,9.75 111.02,9.30 C110.56,8.85 109.92,8.63 109.11,8.63 C108.46,8.63 107.91,8.72 107.43,8.92 C106.96,9.11 106.57,9.38 106.26,9.73 C105.94,10.08 105.71,10.50 105.55,10.97 C105.39,11.44 105.32,11.96 105.32,12.52 L105.32,19.53 L103.21,19.53 L103.21,7.12 L105.19,7.12' id='Fill-8'></path>
+<path d='M122.47,7.12 L122.47,8.92 L119.92,8.92 L119.92,16.62 C119.92,16.86 119.94,17.05 119.98,17.20 C120.02,17.34 120.10,17.46 120.22,17.54 C120.33,17.62 120.49,17.67 120.70,17.69 C120.91,17.71 121.18,17.73 121.50,17.73 L122.47,17.73 L122.47,19.53 L120.86,19.53 C120.32,19.53 119.85,19.49 119.46,19.42 C119.07,19.35 118.76,19.22 118.52,19.02 C118.28,18.83 118.10,18.56 117.99,18.21 C117.87,17.86 117.81,17.39 117.81,16.81 L117.81,8.92 L115.63,8.92 L115.63,7.12 L117.81,7.12 L117.81,3.39 L119.92,3.39 L119.92,7.12 L122.47,7.12' id='Fill-9'></path>
+<path d='M0.67,11.87 L2.62,13.76 L8.76,19.50 L11.41,16.94 C11.65,16.61 11.64,16.16 11.36,15.84 L8.94,13.72 L8.95,13.72 L6.34,11.19 C6.04,10.84 6.04,10.32 6.37,9.99 L13.38,3.21 L10.20,0.12 L0.68,9.31 C-0.05,10.02 -0.05,11.17 0.67,11.87' id='Fill-10'></path>
+<path d='M21.60,15.15 L19.66,13.27 L13.51,7.53 L10.86,10.08 C10.62,10.42 10.64,10.87 10.91,11.19 L13.33,13.31 L13.33,13.31 L15.93,15.84 C16.24,16.19 16.23,16.70 15.91,17.04 L8.89,23.82 L12.08,26.91 L19.65,19.60 L21.60,17.71 C22.33,17.01 22.33,15.86 21.60,15.15' id='Fill-11'></path>
+<path d='M44.55,4.58 C44.55,5.24 44.00,5.77 43.32,5.77 C42.64,5.77 42.09,5.24 42.09,4.58 C42.09,3.93 42.64,3.39 43.32,3.39 C44.00,3.39 44.55,3.93 44.55,4.58' id='Fill-12'></path>
+<path d='M100.11,4.58 C100.11,5.24 99.56,5.77 98.88,5.77 C98.20,5.77 97.65,5.24 97.65,4.58 C97.65,3.93 98.20,3.39 98.88,3.39 C99.56,3.39 100.11,3.93 100.11,4.58' id='Fill-13'></path>
+</g>
+</svg>
+</a>
+</section>
+<section class='l-ai-cen l-d-f l-gs-ph1' id='hamburger-container'>
+<button class='hamburger'>
+<div class='hamburger-box'>
+<div class='hamburger-inner'></div>
+</div>
+</button>
+</section>
+<section class='l-ai-cen' id='nav-container'>
+<ul class='l-d-f l-w-100 l-ma0 l-fd-col' id='nav'>
+<li class='l-gs-ph2 l-gs-ph1--2col t-ls-n'>
+<a data-text='Blog' href='/blog/'>
+Blog
+</a>
+</li>
+<li class='l-gs-ph2 l-gs-ph1--2col t-ls-n'>
+<a data-text='Community' href='/community/'>
+Community
+</a>
+</li>
+<li class='l-gs-ph2 l-gs-ph1--2col t-ls-n'>
+<a data-text='Jobs' href='/jobs/'>
+Jobs
+</a>
+</li>
+<li class='l-gs-ph2 l-gs-ph1--2col t-ls-n'>
+<a data-text='Library' href='/premium/library' id='nav-library'>
+Library
+</a>
+</li>
+<li class='l-gs-ph2 l-gs-ph1--2col t-ls-n'>
+<a data-reveal-id="modal-sign-in" style="border-width: 1px;" href="/premium/sign-in">Login</a>
+</li>
+<buy-button button_text='Join Premium' class='l-as-cen' class_name='u-small u-pink l-as-cen l-d-n l-gs-ph1 l-gs-mh1 f-smaller f-small--3col this-is-it' normal_price='15' onclick='setCookie(&#39;checkout_product&#39;, &#39;&#39;, 0);' open_modal='modal-sign-up' sale_price='9' url_normal='/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_medium=topnav&amp;ref_source=premium' url_sale='/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_medium=topnav&amp;ref_source=premium'></buy-button>
+</ul>
+</section>
+</div>
+</nav>
+</div>
+<div class='l-d-b smartBar_active' id='HeaderBar_offsetSpacer'></div>
+<script>
+  localStorage.removeItem('SP_campaign');
+  localStorage.removeItem('SP_content');
+  
+  /* Toggle mobile navigation */
+  var toggleMobileNav = function(event) {
+    var target = event.currentTarget;
+    if (target && target.parentElement) {
+      target.parentElement.classList.toggle("open");
+    }
+  }
+  
+  const burgerNavigation = document.querySelector(".hamburger");
+  if (burgerNavigation) {
+    burgerNavigation.addEventListener("click", toggleMobileNav);
+  }
+  
+  /* Set active navigation item  */
+  var current_url = window.location.href;
+  var navItems = [
+    {id: "nav-library", url: "/premium/library"},
+    {id: "nav-dashboard", url: "/premium/dashboard"},
+    {id: "nav-account", url: "/premium/account"},
+  ];
+  for(x=0; x<navItems.length; x++) {
+    if (current_url.indexOf(navItems[x]["url"]) > -1) {
+      document.getElementById(navItems[x]["id"]).classList.add("youarehere");
+    }
+  }
+  
+  function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+</script>
+
+
+<div class='row flash-messages'>
+</div>
+
+<div class='Product t-bg-white l-d-f l-fd-col l-w-100'>
+<div class='l-w-2col--2col l-w-3col--3col l-w-4col--4col l-ph5--4col l-ph0 l-d-f l-fw-w l-mh-auto--2col'>
+<div class='header l-w-100 l-mv2 l-mv3--2col l-mh2 l-mh0--2col'>
+<div class='title l-d-f l-fd-col'>
+<div class='breadcrumbs t-bg-white'>
+<ol itemscope='' itemtype='https://schema.org/BreadcrumbList'>
+<li class='l-d-ib f-small' itemprop='itemListElement' itemscope='' itemtype='https://schema.org/ListItem'>
+<a href='/premium/library' itemprop='item'>
+<span itemprop='name'>
+Library
+</span>
+</a>
+<meta content='1' itemprop='position'>
+</li>
+<li class='l-d-ib f-small' itemprop='itemListElement' itemscope='' itemtype='https://schema.org/ListItem'>
+<a href='/premium/library/web' itemprop='item'>
+<span itemprop='name'>
+Web
+</span>
+</a>
+<meta content='2' itemprop='position'>
+</li>
+<li class='l-d-ib f-small' itemprop='itemListElement' itemscope='' itemtype='https://schema.org/ListItem'>
+<a href='/premium/library/courses' itemprop='item'>
+<span itemprop='name'>
+Course
+</span>
+</a>
+<meta content='3' itemprop='position'>
+</li>
+</ol>
+</div>
+<h1 class='l-ma0 l-mv2 f-lh-title'>
+<span itemprop='name'>Build a Web App Using Functional Programming Principles with Elm</span>
+</h1>
+<div class='meta-data l-d-f l-jc-sb'>
+<ul class='l-ml0 authors l-d-n l-d-f--2col'>
+<li class='l-d-ib'>
+<span itemprop='workExample' itemtype='http://schema.org/Book'>
+<span class='f-small'>
+By&nbsp;
+</span>
+<li class='l-d-ib'>
+<span class='f-small f-c-grey-700' itemprop='author' itemtype='http://schema.org/Person'>
+Luke Westby
+</span>
+<span class='l-mr2'>
+,
+</span>
+</li>
+<li class='l-d-ib'>
+<span class='f-small f-c-grey-700' itemprop='author' itemtype='http://schema.org/Person'>
+Jeff Schomay
+</span>
+</li>
+</span>
+</li>
+</ul>
+<p class='f-small l-d-n--2col'>
+2164 Happy Students
+</p>
+<div class='f-small l-d-b l-d-n--2col'>
+<div class='star-rating l-i3'>
+<span class='fa-stack fa-fw l-w4--4col l-w3'>
+<i class='fas fa-star'></i>
+</span>
+<span class='fa-stack fa-fw l-w4--4col l-w3'>
+<i class='fas fa-star'></i>
+</span>
+<span class='fa-stack fa-fw l-w4--4col l-w3'>
+<i class='fas fa-star'></i>
+</span>
+<span class='fa-stack fa-fw l-w4--4col l-w3'>
+<i class='fas fa-star'></i>
+</span>
+<span class='fa-stack fa-fw l-w4--4col l-w3'>
+<i class='far fa-star fa-stack-1x'></i>
+<i class='fas fa-star-half fa-stack-1x'></i>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class='meta-score l-d-n l-d-f--2col l-ai-cen l-jc-cen'>
+<div class='l-d-f l-fd-col'>
+<div class='f-bold f-center l-mb2'>
+4.6 Average Customer Rating
+</div>
+<div class='f-center l-mb2'>
+<div class='star-rating l-i4' itemscope='' itemtype='http://schema.org/Rating'>
+<meta content='4.6' itemprop='ratingValue'>
+<meta content='11' itemprop='ratingCount'>
+<span class='fa-stack fa-fw l-w4--2col l-w3'>
+<i class='fas fa-star'></i>
+</span>
+<span class='fa-stack fa-fw l-w4--2col l-w3'>
+<i class='fas fa-star'></i>
+</span>
+<span class='fa-stack fa-fw l-w4--2col l-w3'>
+<i class='fas fa-star'></i>
+</span>
+<span class='fa-stack fa-fw l-w4--2col l-w3'>
+<i class='fas fa-star'></i>
+</span>
+<span class='fa-stack fa-fw l-w4--2col l-w3'>
+<i class='far fa-star fa-stack-1x'></i>
+<i class='fas fa-star-half fa-stack-1x'></i>
+</span>
+</div>
+</div>
+<div class='f-center'>
+<a href="#reviews">(from 11 user reviews)</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='product-section'>
+<div class='product-header'>
+<div class='l-w-2col--2col l-w-3col--3col l-w-4col--4col l-ph5--4col l-mh-auto'>
+<div class='product-title l-pv4'>
+<div class='title l-d-n l-d-b--2col l-mr0 l-mr4--2col'>
+<h2 class='f-c-white l-mv0'>
+Elm, a front-end functional programming language for web apps
+</h2>
+</div>
+<div class='product-item l-p-rel l-ml4--2col'>
+<div class='product-item-card l-d-f l-fd-col l-pa3 l-w-100'>
+<div class='l-d-f l-jc-cen ms-fix-height'>
+<div class='Product_cta l-p-rel'>
+<a class='l-d-b l-fd-col' data-reveal-id='previewCourseBookModal' data='' onclick='window.AmplitudeLogger().logger(`Course Modal Image - Clicked`, { component: `Course Modal Image`, page: `Product Page`, url: window.location.href, productName: `Build a Web App Using Functional Programming Principles with Elm`, productType: `Course`, action: `Open Modal` })'>
+<img class='course' src='https://d2sis3lil8ndrq.cloudfront.net/courses/6984d63d-54c4-4d4f-aec6-22e677defd18.png'>
+<div class='play-btn l-ai-cen l-jc-cen l-w-100'>
+<div>
+<img src='https://d39ayi7b6b3haj.cloudfront.net/premium/assets/library/play_icon-7e193691d286e335fbe1b639be1991b06ab93b56ad776fb941b68eecc353d5e2.svg'>
+</div>
+</div>
+</a>
+
+</div>
+</div>
+
+<resource-button children='Watch This Course' href='/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_medium=Course&amp;ref_source=premium' onclick='window.AmplitudeLogger().logger(&#39;Product Item Book Download CTA - Clicked&#39;, { component: &#39;Product Item CTA&#39;, page: &#39;Product Page&#39;, url: window.location.href, productName: `Build a Web App Using Functional Programming Principles with Elm`, productType: `Course`, action: &#39;Open Checkout&#39; })'></resource-button>
+
+<ul class='l-d-n l-d-b--2col information l-ml0'>
+<li class='t-ls-n l-pa3' itemprop='datePublished'>Published Date March 2017</li>
+<li class='t-ls-n l-pa3'>
+<i class='l-w4 far fa-play-circle'></i>
+9 Videos
+</li>
+<li class='t-ls-n l-pa3'>
+<i class='l-w4 far fa-clock'></i>
+1 hours 46 minutes
+</li>
+<li class='t-ls-n l-pa3'>
+<i class='l-w4 fas fa-graduation-cap'></i>
+2164 Happy Students
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='product-information'>
+<div class='about l-w-2col--2col l-w-3col--3col l-w-4col--4col l-ph5--4col l-mh-auto'>
+<div class='description l-mr4--2col l-d-f l-fd-col'>
+<div class='l-mh2 l-mr0--3col l-mh0--2col'>
+<h2 class='l-i4 f-bold l-gs-mt4'>
+About the course
+</h2>
+<div class='f-lh'>
+<p>Front-end developers have many considerations to make when working with web apps and sites. Once you&rsquo;ve set up the perfect environment with the right libraries and tools, you&rsquo;ll have to figure out the coding techniques you&rsquo;ll apply. What if there was a way to build a web app that would just let you focus on&hellip; just building the web app?</p>
+
+<p>Elm is a functional programming language that compiles to HTML, CSS and JavaScript — error free. How? Its strong static typing system and time machine process allow you to crush bugs through reproducible and predictive debugging. Not to mention, Elm&rsquo;s immutable data structures and compile time error reporting will help you save time and build a solid and robust app.</p>
+
+<p>There are many reasons why you&rsquo;d want to start learning Elm! </p>
+
+<p>In our new mini course, we&rsquo;ll show you how to get started with Elm, how to understand and work with Elm&rsquo;s data structures,  and how to continue learning. Our course barely scratches the surface of Elm, but we will give you everything you need to kick-start your new future with Elm.</p>
+
+<p>This mini-course is perfect for those who know HTML, CSS and JavaScript and ready to take their front-end development skills to the next level with some functional programming with Elm.</p>
+
+<p>For more on functional programming, take our <a href="https://www.sitepoint.com/premium/courses/elm-a-beginners-guide-to-elm-and-data-2940">Functional JavaScript Programming</a> course. </p>
+
+</div>
+</div>
+<div class='l-d-n--2col l-mh2 l-mh0--2col'>
+<div class='l-mb3 l-mb0--2col product-item-card l-d-f l-fd-col'>
+<ul class='l-d-n l-d-b--2col information l-ml0'>
+<li class='t-ls-n l-pa3' itemprop='datePublished'>Published Date March 2017</li>
+<li class='t-ls-n l-pa3'>
+<i class='l-w4 far fa-play-circle'></i>
+9 Videos
+</li>
+<li class='t-ls-n l-pa3'>
+<i class='l-w4 far fa-clock'></i>
+1 hours 46 minutes
+</li>
+<li class='t-ls-n l-pa3'>
+<i class='l-w4 fas fa-graduation-cap'></i>
+2164 Happy Students
+</li>
+</ul>
+
+<resource-button children='Watch This Course' href='/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_medium=Course&amp;ref_source=premium' onclick='window.AmplitudeLogger().logger(&#39;Product Item Book Download CTA - Clicked&#39;, { component: &#39;Product Item CTA&#39;, page: &#39;Product Page&#39;, url: window.location.href, productName: `Build a Web App Using Functional Programming Principles with Elm`, productType: `Course`, action: &#39;Open Checkout&#39; })'></resource-button>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='l-ph4--4col l-ph0 l-w-100 l-d-n l-d-f--2col l-h-100 l-jc-cen' id='featured-review-section'>
+<div class='content-wrapper l-mv6--4col l-mv5 l-mb3 l-ph5 l-d-f l-ai-cen--2col l-fd-col--2col l-w-100'>
+<h3 class='_header f-bold l-mh0 l-mb4 l-mt0 f-xlarge l-w-100'>
+What students say..
+</h3>
+<div class='reviews-wrapper l-d-f l-fd-row l-fw-w l-jc-cen l-ai-cen--2col l-fd-col--2col l-fd-row--4col'>
+<div class='f-medium l-d-f l-fd-col l-mb0--4col l-mb5 l-mr0--3col l-w-100 l-w-2col--2col review-wrapper single'>
+<div class='icon-container f-center f-minor'>
+<i class='fas fa-star star'></i>
+<i class='fas fa-star star'></i>
+<i class='fas fa-star star'></i>
+<i class='fas fa-star star'></i>
+<i class='fas fa-star star'></i>
+</div>
+<div class='review'>Best intro course I&#39;ve seen to Elm ever! The authors don&#39;t just cover the language basics, or do a mere rehash of the content to be found at the elm-lang.org site. They actually provide sound reasons behind the design and practical use for the fundamentals of building Elm apps. If you&#39;re already familiar with another JavaScript library and want to take good introductory dive into Elm, this is the course for you.</div>
+<div class='reviewer-wrapper l-d-f l-fd-row l-ai-cen l-jc-fe'>
+<div class='reviewer l-d-f l-jc-fe'>Jon Guenther</div>
+<div class='l-d-f l-jc-cen l-ai-cen feature avatar-container'>
+<img class='l-round' src='https://learnable-avatars.s3.amazonaws.com/4/485/48571/IMG_20200115_065302_01.jpg'>
+</div>
+</div>
+</div>
+<div class='l-mv5 l-d-f l-fd-col l-w-1col l-mv5--4col'>
+<resource-button children='Watch This Course' href='/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_medium=Course&amp;ref_source=premium' onclick='window.AmplitudeLogger().logger(&#39;Product Item Book Download CTA - Clicked&#39;, { component: &#39;Product Item CTA&#39;, page: &#39;Product Page&#39;, url: window.location.href, productName: `Build a Web App Using Functional Programming Principles with Elm`, productType: `Course`, action: &#39;Open Checkout&#39; })'></resource-button>
+
+</div>
+</div>
+</div>
+</div>
+
+<teachers-section teachers='[{&quot;full_name&quot;:&quot;Luke Westby&quot;,&quot;twitter&quot;:&quot;luke_dot_js&quot;,&quot;bio&quot;:&quot;Luke is a partner and co-founder a HumbleSpark in Chicago, IL. He is an active contributor to the Elm community and can frequently be found giving conference talks, producing audio and video, live-streaming, and discussing the language in Slack. He has contributed to a number of popular Elm projects and maintains a few open source packages himself. Luke is committed to building a strong, inclusive, and engaged community around Elm so that everyone working on web applications can share in the great experience it offers.&quot;,&quot;avatar&quot;:{&quot;url&quot;:&quot;https://learnable-images.s3.amazonaws.com/course_author/5cb3dab7-7c09-4f2a-893c-f0c77ea7e1de.jpg&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://learnable-images.s3.amazonaws.com/course_author/5cb3dab7-7c09-4f2a-893c-f0c77ea7e1de_thumb.jpg&quot;}},&quot;courses_taught_count&quot;:1,&quot;courses_taught_students_count&quot;:2164,&quot;combined_rating_average&quot;:&quot;4.6&quot;},{&quot;full_name&quot;:&quot;Jeff Schomay&quot;,&quot;twitter&quot;:&quot;jschomay&quot;,&quot;bio&quot;:&quot;Web app and games developer. Huge #elmlang fan. Screenwriter. Juggler. My work focuses on making an impact on an audience.&quot;,&quot;avatar&quot;:{&quot;url&quot;:&quot;https://learnable-images.s3.amazonaws.com/course_author/addf4ae6-1c18-47a2-8c37-099f9148e25e.jpg&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://learnable-images.s3.amazonaws.com/course_author/addf4ae6-1c18-47a2-8c37-099f9148e25e_thumb.jpg&quot;}},&quot;courses_taught_count&quot;:1,&quot;courses_taught_students_count&quot;:2164,&quot;combined_rating_average&quot;:&quot;4.6&quot;}]' type='Course'></teachers-section>
+<div class='comments-section l-w-2col--2col l-w-3col--3col l-w-4col--4col l-ph5--4col l-ph0 l-mh-auto'>
+<div class='Product_main l-w-100 t-bg-white l-mv3' id='reviews'>
+<reviews gid='Z2lkOi8vbGVhcm5hYmxlL0NvdXJzZS8yOTQw' type='Course'></reviews>
+</div>
+</div>
+
+<div class='content-section l-w-2col--2col l-w-3col--3col l-w-4col--4col l-ph5--4col l-ph0 l-mh-auto--2col'>
+<hr class='divider top-divider wide-space'>
+<div class='course-outline l-pb4'>
+<div class='table-of-contents-wrapper'>
+<div class='table-of-contents l-w-100--1col t-bg-white l-mb3'>
+<h2 class='table-of-contents-label l-mt3'>
+Courses Outline
+</h2>
+<div class='Contents'>
+<div class='Contents_header'>
+Lesson 1: Getting Started
+</div>
+<div class='Contents_row '>
+<a class='Contents_link' href='/premium/courses/build-a-web-app-using-functional-programming-principles-with-elm-2940/lesson/1/step/1' title='Why Elm?'></a>
+<div class='status Contents_status'>
+<span>
+<i class='Contents_label'>
+Free
+</i>
+</span>
+</div>
+<div class='content-title Contents_title f-small f-lh-copy l-gs-pl1'>
+<span>
+Why Elm?
+</span>
+</div>
+<div class='content-action Contents_actions'>
+<span>
+</span>
+</div>
+<div class='content-length Contents_length f-small f-lh-copy'>
+<span>
+7:38
+</span>
+</div>
+</div>
+<div class='Contents_row u-muted'>
+<a class='Contents_link' data-not-previewable='' href='/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_medium=Course&amp;ref_source=premium' title='Setting up an Elm Environment'></a>
+<div class='status Contents_status'>
+<span>
+<i class='far fa-lock'></i>
+</span>
+</div>
+<div class='content-title Contents_title f-small f-lh-copy l-gs-pl1'>
+<span>
+Setting up an Elm Environment
+</span>
+</div>
+<div class='content-action Contents_actions'>
+<span>
+</span>
+</div>
+<div class='content-length Contents_length f-small f-lh-copy'>
+<span>
+12:50
+</span>
+</div>
+</div>
+<div class='Contents_header'>
+Lesson 2: Understanding Data
+</div>
+<div class='Contents_row u-muted'>
+<a class='Contents_link' data-not-previewable='' href='/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_medium=Course&amp;ref_source=premium' title='Understanding Data Types'></a>
+<div class='status Contents_status'>
+<span>
+<i class='far fa-lock'></i>
+</span>
+</div>
+<div class='content-title Contents_title f-small f-lh-copy l-gs-pl1'>
+<span>
+Understanding Data Types
+</span>
+</div>
+<div class='content-action Contents_actions'>
+<span>
+</span>
+</div>
+<div class='content-length Contents_length f-small f-lh-copy'>
+<span>
+11:23
+</span>
+</div>
+</div>
+<div class='Contents_row u-muted'>
+<a class='Contents_link' data-not-previewable='' href='/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_medium=Course&amp;ref_source=premium' title='Using Data Structures'></a>
+<div class='status Contents_status'>
+<span>
+<i class='far fa-lock'></i>
+</span>
+</div>
+<div class='content-title Contents_title f-small f-lh-copy l-gs-pl1'>
+<span>
+Using Data Structures
+</span>
+</div>
+<div class='content-action Contents_actions'>
+<span>
+</span>
+</div>
+<div class='content-length Contents_length f-small f-lh-copy'>
+<span>
+11:02
+</span>
+</div>
+</div>
+<div class='Contents_row u-muted'>
+<a class='Contents_link' data-not-previewable='' href='/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_medium=Course&amp;ref_source=premium' title='Understanding the Data Structures Model Layer in Elm'></a>
+<div class='status Contents_status'>
+<span>
+<i class='far fa-lock'></i>
+</span>
+</div>
+<div class='content-title Contents_title f-small f-lh-copy l-gs-pl1'>
+<span>
+Understanding the Data Structures Model Layer in Elm
+</span>
+</div>
+<div class='content-action Contents_actions'>
+<span>
+</span>
+</div>
+<div class='content-length Contents_length f-small f-lh-copy'>
+<span>
+13:58
+</span>
+</div>
+</div>
+<div class='Contents_row u-muted'>
+<a class='Contents_link' data-not-previewable='' href='/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_medium=Course&amp;ref_source=premium' title='Understanding the Data Structures View Layer in Elm'></a>
+<div class='status Contents_status'>
+<span>
+<i class='far fa-lock'></i>
+</span>
+</div>
+<div class='content-title Contents_title f-small f-lh-copy l-gs-pl1'>
+<span>
+Understanding the Data Structures View Layer in Elm
+</span>
+</div>
+<div class='content-action Contents_actions'>
+<span>
+</span>
+</div>
+<div class='content-length Contents_length f-small f-lh-copy'>
+<span>
+14:33
+</span>
+</div>
+</div>
+<div class='Contents_row u-muted'>
+<a class='Contents_link' data-not-previewable='' href='/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_medium=Course&amp;ref_source=premium' title='Refactoring for Better Data'></a>
+<div class='status Contents_status'>
+<span>
+<i class='far fa-lock'></i>
+</span>
+</div>
+<div class='content-title Contents_title f-small f-lh-copy l-gs-pl1'>
+<span>
+Refactoring for Better Data
+</span>
+</div>
+<div class='content-action Contents_actions'>
+<span>
+</span>
+</div>
+<div class='content-length Contents_length f-small f-lh-copy'>
+<span>
+14:26
+</span>
+</div>
+</div>
+<div class='Contents_header'>
+Lesson 3: Wrapping Up
+</div>
+<div class='Contents_row u-muted'>
+<a class='Contents_link' data-not-previewable='' href='/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_medium=Course&amp;ref_source=premium' title='Side Effects in Elm'></a>
+<div class='status Contents_status'>
+<span>
+<i class='far fa-lock'></i>
+</span>
+</div>
+<div class='content-title Contents_title f-small f-lh-copy l-gs-pl1'>
+<span>
+Side Effects in Elm
+</span>
+</div>
+<div class='content-action Contents_actions'>
+<span>
+</span>
+</div>
+<div class='content-length Contents_length f-small f-lh-copy'>
+<span>
+6:58
+</span>
+</div>
+</div>
+<div class='Contents_row u-muted'>
+<a class='Contents_link' data-not-previewable='' href='/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_medium=Course&amp;ref_source=premium' title='How to Read Elm Docs'></a>
+<div class='status Contents_status'>
+<span>
+<i class='far fa-lock'></i>
+</span>
+</div>
+<div class='content-title Contents_title f-small f-lh-copy l-gs-pl1'>
+<span>
+How to Read Elm Docs
+</span>
+</div>
+<div class='content-action Contents_actions'>
+<span>
+</span>
+</div>
+<div class='content-length Contents_length f-small f-lh-copy'>
+<span>
+13:36
+</span>
+</div>
+</div>
+</div>
+
+</div>
+<div class='product-item l-ph0 l-ph2--3col l-ml4--3col'>
+<div class='product-item-card l-fd-col l-pa3--3col'>
+<div class='l-d-f l-jc-cen ms-fix-height'>
+<div class='Product_cta l-p-rel'>
+<a class='l-d-b l-fd-col' data-reveal-id='previewCourseBookModal' data='' onclick='window.AmplitudeLogger().logger(`Course Modal Image - Clicked`, { component: `Course Modal Image`, page: `Product Page`, url: window.location.href, productName: `Build a Web App Using Functional Programming Principles with Elm`, productType: `Course`, action: `Open Modal` })'>
+<img class='course' src='https://d2sis3lil8ndrq.cloudfront.net/courses/6984d63d-54c4-4d4f-aec6-22e677defd18.png'>
+<div class='play-btn l-ai-cen l-jc-cen l-w-100'>
+<div>
+<img src='https://d39ayi7b6b3haj.cloudfront.net/premium/assets/library/play_icon-7e193691d286e335fbe1b639be1991b06ab93b56ad776fb941b68eecc353d5e2.svg'>
+</div>
+</div>
+</a>
+
+</div>
+</div>
+
+<resource-button children='Watch This Course' href='/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_medium=Course&amp;ref_source=premium' onclick='window.AmplitudeLogger().logger(&#39;Product Item Book Download CTA - Clicked&#39;, { component: &#39;Product Item CTA&#39;, page: &#39;Product Page&#39;, url: window.location.href, productName: `Build a Web App Using Functional Programming Principles with Elm`, productType: `Course`, action: &#39;Open Checkout&#39; })'></resource-button>
+
+<ul class='l-d-n l-d-b--2col information l-ml0'>
+<li class='t-ls-n l-pa3' itemprop='datePublished'>Published Date March 2017</li>
+<li class='t-ls-n l-pa3'>
+<i class='l-w4 far fa-play-circle'></i>
+9 Videos
+</li>
+<li class='t-ls-n l-pa3'>
+<i class='l-w4 far fa-clock'></i>
+1 hours 46 minutes
+</li>
+<li class='t-ls-n l-pa3'>
+<i class='l-w4 fas fa-graduation-cap'></i>
+2164 Happy Students
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<script>
+  localStorage.setItem('SP_campaign', "build-a-web-app-using-functional-programming-principles-with-elm-2940");
+  
+  if ("Course" === "Course"){
+    var id_storage_name = "SP_course_ids";
+  }else if ("Course" === "Book"){
+    var id_storage_name = "SP_book_ids";
+  }
+  
+  var resource_ids = JSON.parse(localStorage.getItem(id_storage_name) || "[]");
+  
+  // check if local storage does not have the current resource stored
+  if (resource_ids.includes("2940") === false) {
+    // delete the first/oldest element of the local storage if has at least 3 ids stored
+    if (resource_ids.length >= 3){
+      resource_ids.shift();
+    }
+  
+    // add the id
+    var resource_id = "2940"
+    resource_ids.push(resource_id);
+    localStorage.setItem(id_storage_name, JSON.stringify(resource_ids));
+  }
+  
+  window.addEventListener('load', function(e) {
+    setTimeout(() => {
+          window.AmplitudeLogger().logger("Product Page - Loaded", {
+          page: "Product Page",
+          url: window.location.href,
+          productName: "Build a Web App Using Functional Programming Principles with Elm",
+          productType: "Course",
+      })
+    }, 1500);
+  });
+</script>
+<preview-modal button_url='/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_campaign=build+a+web+app+using+functional+programming+principles+with+elm&amp;ref_medium=course&amp;ref_source=direct-to-checkout' captions_url='https://www.sitepoint.com/premium/captions/2361.srt' data='[{&quot;lesson_title&quot;:&quot;Getting Started&quot;,&quot;steps&quot;:[{&quot;name&quot;:&quot;Why Elm?&quot;},{&quot;name&quot;:&quot;Setting up an Elm Environment&quot;}]},{&quot;lesson_title&quot;:&quot;Understanding Data&quot;,&quot;steps&quot;:[{&quot;name&quot;:&quot;Why Elm?&quot;},{&quot;name&quot;:&quot;Setting up an Elm Environment&quot;}]},{&quot;lesson_title&quot;:&quot;Wrapping Up&quot;,&quot;steps&quot;:[{&quot;name&quot;:&quot;Why Elm?&quot;},{&quot;name&quot;:&quot;Setting up an Elm Environment&quot;}]}]' default_thumbnail_url='https://d2sis3lil8ndrq.cloudfront.net/courses/6984d63d-54c4-4d4f-aec6-22e677defd18_medium.png' hd_video_url='https://learnable-videos.s3.amazonaws.com/9f923fe9a41a035a415dde9c37006e7c.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAT7P7SBTLJ72ZENEQ%2F20210226%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210226T224401Z&amp;X-Amz-Expires=600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=0a8be4e0b66c62e19cc1a73f779141f0f3f01bfebefd613aa8e7ece426d698dd' sd_video_url='https://learnable-videos.s3.amazonaws.com/468e404ba006a67f00297b0efbea54f1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAT7P7SBTLJ72ZENEQ%2F20210226%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210226T224401Z&amp;X-Amz-Expires=600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9646883c3ce136fa61c91ebf66b3182e324eb73f6c98a45acd86bf89cd6f3b49' thumbnail_url='https://d3rj1gznkm47xj.cloudfront.net/a85eb42e-bc06-4d77-a05f-ac365a7a14db.png' title='Build a Web App Using Functional Programming Principles with Elm' type='Course'></preview-modal>
+<!-- / disabled preview on books for now -->
+
+
+<footer role='contentinfo'>
+<sp-cookie-warning></sp-cookie-warning>
+<div class='l-w-100 l-d-f Footer-bg'>
+<div class='l-d-f l-fw-w l-mh-auto'>
+<div class='l-d-f l-fw-w l-mt4 l-w-100 l-pa3 l-w-3col--4col l-jc-sb--2col l-jc-sa--4col l-ph3'>
+<ul>
+<li class='t-ls-n'>
+<div class='f-c-white f-large f-bold l-mb2'>
+Stuff We Do
+</div>
+</li>
+<li class='l-ml3 f-c-grey-300 l-mb2 Footer-points'><a class="Footer-link f-small" href="/premium/">Premium</a></li>
+<li class='l-ml3 f-c-grey-300 l-mb2'><a class="Footer-link f-small" href="/newsletters/">Newsletters</a></li>
+<li class='l-ml3 f-c-grey-300 l-mb2'><a class="Footer-link f-small" href="/community/">Forums</a></li>
+<li class='l-ml3 f-c-grey-300 l-mb2'><a class="Footer-link f-small" href="/premium/deals">Deals</a></li>
+<li class='l-ml3 f-c-grey-300 l-mb2'><a class="Footer-link f-small" href="/jobs/">Remote Jobs</a></li>
+</ul>
+<ul>
+<li class='t-ls-n'>
+<div class='f-c-white f-large f-bold l-mb2'>
+About
+</div>
+</li>
+<li class='l-ml3 f-c-grey-300 l-mb2'><a class="Footer-link f-small" href="/about-us/">Our story</a></li>
+<li class='l-ml3 f-c-grey-300 l-mb2'><a class="Footer-link f-small" href="https://www.sitepoint.com/legals/">Terms of use</a></li>
+<li class='l-ml3 f-c-grey-300 l-mb2'><a class="Footer-link f-small" href="https://www.sitepoint.com/privacy-policy/">Privacy policy</a></li>
+<li class='l-ml3 f-c-grey-300 l-mb2'><a class="Footer-link f-small" href="https://sitepoint.typeform.com/to/fNY7XG">Corporate memberships</a></li>
+<li class='l-ml3 f-c-grey-300 l-mb2'><a class="Footer-link f-small" href="https://sitepoint.tapfiliate.com/">Become an affiliate</a></li>
+</ul>
+<ul>
+<li class='t-ls-n'>
+<div class='f-c-white f-large f-bold l-mb2'>
+Contact
+</div>
+</li>
+<li class='l-ml3 f-c-grey-300 l-mb2'><a class="Footer-link f-small" href="/contact-us/">Contact us</a></li>
+<li class='l-ml3 f-c-grey-300 l-mb2'><a class="Footer-link f-small" href="https://sitepoint.zendesk.com/hc/en-us">FAQ</a></li>
+<li class='l-ml3 f-c-grey-300 l-mb2'><a class="Footer-link f-small" href="https://sitepoint.typeform.com/to/HtAXVN">Publish your book with us</a></li>
+<li class='l-ml3 f-c-grey-300 l-mb2'><a class="Footer-link f-small" href="/write-for-us/">Write an article for us</a></li>
+<li class='l-ml3 f-c-grey-300 l-mb2'><a class="Footer-link f-small" href="/advertise/">Advertise</a></li>
+</ul>
+</div>
+<div class='l-d-n l-d-b--4col l-as-cen Footer-hr'></div>
+<div class='l-mt4 l-pa3 l-w-1col--4col'>
+<ul class='t-ls-n l-d-f l-fw-w l-d-b--3col'>
+<li>
+<div class='f-c-white f-large f-bold l-mb2 l-mr3'>
+Connect
+</div>
+</li>
+<li class='f-center--4col l-mt3--4col l-mb4'>
+<a target="_blank" class="f-c-grey-300" rel="noopener" href="https://www.facebook.com/sitepoint"><i class='fab fa-facebook-square l-i4'></i>
+</a><a target="_blank" class="l-pl3 f-c-grey-300" rel="noopener" href="https://twitter.com/sitepointdotcom"><i class='fab fa-twitter-square l-i4'></i>
+</a><a target="_blank" class="l-pl3 f-c-grey-300" href="/feed"><i class='fas fa-rss-square l-i4'></i>
+</a></li>
+<div>
+<p class='f-c-grey-300 l-mh-auto l-ml3--2col l-ml0--3col l-mt3--4col l-mb2 f-smaller'>
+&copy; 2000 –
+2021
+SitePoint Pty. Ltd.
+</p>
+<div class='f-c-grey-300 l-mh-auto l-ml3--2col l-ml0--3col f-smaller f-lh-copy'>
+This site is protected by reCAPTCHA and the Google
+<a class="Footer-link f-smaller f-semibold" href="https://policies.google.com/privacy">Privacy Policy</a>
+and
+<a class="Footer-link f-smaller f-semibold" href="https://policies.google.com/terms">Terms of Service</a>
+apply.
+</div>
+</div>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- / post_footer: (used for modals etc so that their positioning is unaffected by the content) -->
+<div aria-labelledby='Download' class='reveal-modal small modal--standard modal--download' id='modal-download' role='dialog' tabindex='-1'>
+<a aria-hidden='true' class='close-reveal-modal' data-dismiss='modal' type='button'>×</a>
+<div class='content'></div>
+</div>
+
+
+<div class='reveal-modal large' id='modal-sign-in'>
+<div class='Signup l-w-100 l-mh-auto'>
+<h2 class='l-mt0 f-xxlarge f-normal'>
+Login
+</h2>
+<div>
+<form class="simple_form login-form" novalidate="novalidate" onsubmit="var ls = window.localStorage;
+if (!ls) return true;
+var form = this;
+form.onsubmit = function(){ return false; };
+var email = $(form).find('#user_login').val();
+$.getJSON('/wp-admin/admin-ajax.php?action=sp_api_hash_email&email='+email)
+  .done(function(result){
+    if (result.md5) {
+      form.onsubmit = function(){ return true; };
+      form.submit();
+    }
+  })
+  .fail(function(){
+    form.onsubmit = function(){ return true; };
+    form.submit();
+  });
+
+return false;
+" id="new_user" action="/premium/sign-in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="L8UEYgoIqaRgmX+7fn8NajYext6umIJBkYwPExKtyVGSG4whHHXDj8JcWA6dnZtG1hEkgaKhV9vk2fTZLcm1Eg==" /><div class='SignupForm l-w-100 l-mh-auto'>
+<div class='SignupForm_input u-email f-c-grey-400'>
+<div class='SignupForm_icon-wrapper'>
+<i class='fas fa-envelope'></i>
+</div>
+<div class="input string optional user_login"><input autocomplete="off" autocorrect="off" class="string optional f-normal l-pl5" value="" placeholder="Your email*" type="text" name="user[login]" id="user_login" /></div>
+</div>
+<div class='SignupForm_input u-password f-c-grey-400'>
+<div class='SignupForm_icon-wrapper'>
+<i class='fas fa-lock'></i>
+</div>
+<div class="input password optional user_password"><input autocomplete="off" autocorrect="off" class="password optional f-normal l-pl5" placeholder="Enter password*" type="password" name="user[password]" id="user_password" /></div>
+</div>
+<a class="Signup_link l-d-b f-c-grey-400 f-underline f-small l-mt3 f-right" href="/premium/sign-in/lost-password">Forgot your password?</a>
+<input type="hidden" name="from" id="from" value="/premium/courses/build-a-web-app-using-functional-programming-principles-with-elm-2940" />
+<input type="hidden" name="origin" id="origin" />
+
+<input type="hidden" name="sig" id="sig" />
+<input type="submit" name="commit" value="Login" class="SignupForm_button Button u-cta l-w-100 l-mt4" />
+<div class='SignupForm_or l-d-f l-ai-cen l-mv4 f-c-grey-400'>
+<hr class='f-c-grey-400'>
+OR
+<hr class='f-c-grey-400'>
+</div>
+<a class="Button SignupForm_socialLogin l-w-100 l-mb3 u-facebook" href="/premium/auth/facebook"><i class='fab fa-facebook f-large l-mr1'></i>
+Facebook
+</a><a class="Button SignupForm_socialLogin l-w-100 l-mb3 u-github" href="/premium/auth/github"><i class='fab fa-github-alt f-large l-mr1'></i>
+GitHub
+</a><a class="Button SignupForm_socialLogin l-w-100 u-google" href="/premium/auth/google_oauth2"><i class='fab fa-google f-large l-mr1'></i>
+Google
+</a>
+<div class='SignupForm_newAcc l-d-f l-ai-cen l-jc-cen l-w-100 f-small'>
+New to SitePoint? <a class="f-c-grey-500 f-underline f-small l-ml1" data-reveal-id="modal-sign-up" href="/premium/products/Z2lkOi8vbGVhcm5hYmxlL1Byb2R1Y3QvMzA3?ref_source=premium&amp;ref_medium=sign-in">Create an account!</a>
+</div>
+</div>
+</form>
+</div>
+<a class='close-reveal-modal'>
+&#215;
+</a>
+</div>
+</div>
+
+<div class='reveal-modal xlarge modal--standard sign-up-modal l-pa0 l-b-n' data-reveal='' id='modal-sign-up'>
+<div class='sign-up-account l-d-f l-fd-col-reverse l-fd-row--2col'>
+<div class='l-pa3 l-pa1--2col l-pa4--3col'>
+<h4 class='f-c-white f-center l-w7--3col f-semibold l-mt5 l-mb3 l-mb4--2col l-mb5--3col l-mh3 l-mh0--3col f-medium--2col f-large--3col f-lh-title'>
+Join SitePoint Premium to get access to 600+ books and courses
+</h4>
+<book-publishers inverted='1'></book-publishers>
+</div>
+<social-panel fblink='/premium/auth/facebook' githublink='/premium/auth/github' googlelink='/premium/auth/google_oauth2'></social-panel>
+<div class='l-d-f l-fd-col l-ai-cen l-mt5 l-pt3 l-w-100 l-d-n' id='email-signup-panel'>
+<h1 class='h2 l-mb3 l-mb4--3col l-pb3 l-ph2 f-center f-c-grey-700'>Sign up with your email</h1>
+<form class="simple_form sign_up_form" action="/premium/sign-up" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="nhNIfgCzqCzALumiux2QXc4rDw1Trgc95cqqU2xPW9AjzcA9Fs7CB2LrzhdY/wZxLiTtUl+X0qeQn1GZUysnkw==" /><div class='form-fields l-ph3 l-ph5--2col l-ph6--3col l-mv3 l-mv0--3col l-mt1'>
+<div class='field l-d-f'>
+<div class="input string required sign_up_form_first_name"><input autocomplete="off" autocapitalize="on" autocorrect="off" class="string required f-normal l-pl3 l-br" required="required" aria-required="true" placeholder="First name" type="text" name="sign_up_form[first_name]" id="sign_up_form_first_name" /></div>
+<div class="input string required sign_up_form_last_name"><input autocomplete="off" autocapitalize="on" autocorrect="off" class="string required f-normal l-pl3 l-br" required="required" aria-required="true" placeholder="Last name" type="text" name="sign_up_form[last_name]" id="sign_up_form_last_name" /></div>
+</div>
+<div class='field'>
+<div class="input email required sign_up_form_email"><input autocomplete="off" autocorrect="off" class="string email required f-normal l-pl3 l-br" required="required" aria-required="true" placeholder="Email address" type="email" name="sign_up_form[email]" id="sign_up_form_email" /></div>
+</div>
+<div class='field'>
+<div class="input password required sign_up_form_password"><input autocomplete="off" autocorrect="off" pattern=".{10,}" title="Minimum of 10 characters" class="password required f-normal l-pl3 l-br" required="required" aria-required="true" placeholder="Password" type="password" name="sign_up_form[password]" id="sign_up_form_password" /></div>
+</div>
+<div class="input string required sign_up_form_full_name"><input type="hidden" class="string required" name="sign_up_form[full_name]" id="sign_up_form_full_name" /></div>
+<div class="input string required sign_up_form_aws_course"><input type="hidden" class="string required" name="sign_up_form[aws_course]" id="sign_up_form_aws_course" /></div>
+<div class='g-recaptcha' data-sitekey='6LczVZwUAAAAANaluMcGgoabeh80kO5WSJuDorpI'></div>
+<input type="submit" name="commit" value="Finish" class="SignupForm_button Button u-outline u-blue l-br l-w-100 l-mt2" data-disable-with="Processing" />
+</div>
+</form><div class='footer l-mt3 l-mt5--3col f-center l-ph6--3col'>
+<p class='f-light f-small l-ph3 f-c-grey-300 f-lh-copy'>"By signing up, you agree to our Community Guidelines, Terms of Use, and Privacy Policy"</p>
+<p>
+<a class='l-ml2 f-underline f-c-grey-700 f-normal' id='social-button'>Sign-up using your Social Media Account</a>
+</p>
+</div>
+</div>
+</div>
+<a class='close-reveal-modal'>
+<img class='l-ma2' src='https://d3qm4387qle9v6.cloudfront.net/svg_icons/close.svg'>
+</a>
+</div>
+
+<script>
+  window.addEventListener("load", function() {
+    window.indexedDB.deleteDatabase("sp_reader")
+  
+    // remove sitepoint's offline caches if the user logs out or not logged in
+    window.caches.keys().then(function(keyList) {
+      return Promise.all(keyList.map(function(key) {
+         if (!!key.includes('static-cache') || !!key.includes('sitepoint-')) {
+           return caches.delete(key);
+         }
+      }));
+    })
+  });
+</script>
+<script src="https://d39ayi7b6b3haj.cloudfront.net/premium/assets/React/app-ccedb65c3274e763d62740ca8c752e01ae24fee2669c977ff839a9ea335ddfcc.js"></script>
+<script src="https://d39ayi7b6b3haj.cloudfront.net/premium/assets/application-11dec1d67978673083e98bcd7981aebaa972605b02c65b404930342908b20c25.js"></script>
+<!-- / JS included in javascript_body provides functions and frameworks -->
+<script src="https://d39ayi7b6b3haj.cloudfront.net/premium/assets/content-9e68dc9e41b31ba87bc261c08d6a2d272a0781a153f0201b9b5f937462f33b88.js"></script>
+<script defer='' src='https://unpkg.com/popper.js@1' type='text/javascript'></script>
+<script defer='' src='https://unpkg.com/tippy.js@4' type='text/javascript'></script>
+<script src="https://d39ayi7b6b3haj.cloudfront.net/premium/assets/content-9e68dc9e41b31ba87bc261c08d6a2d272a0781a153f0201b9b5f937462f33b88.js"></script>
+<script defer='' src='https://www.google.com/recaptcha/api.js?render=6LfEw7cUAAAAABIV8YABIbOzqBJ3zr4BpjVbDXDK' type='text/javascript'></script>
+<script>
+  $(document).ready(function(){
+    $('#modal-sign-in').on('opened', function () {
+      $(this).find('#user_login').focus();
+    });
+    if(window.location.hash == "#modal-sign-in") {
+      $("#modal-sign-in").foundation('reveal', 'open');
+    }
+  });
+</script>
+<script>
+  $modalEl = $('#modal-sign-up');
+  $socialBtn = document.getElementById("social-button");
+  
+  var togglePanel = function(event) {
+    document.getElementById("social-panel").classList.toggle("l-d-n");
+    document.getElementById("email-signup-panel").classList.toggle("l-d-n");
+  }
+  
+  if ($socialBtn) $socialBtn.addEventListener("click", togglePanel);
+  
+  var setFullName = function(event) {
+    var first_name = document.getElementById("sign_up_form_first_name").value;
+    var last_name = document.getElementById("sign_up_form_last_name").value;
+    document.getElementById("sign_up_form_full_name").value = first_name + " " + last_name;
+  }
+  document.getElementById("sign_up_form_first_name").addEventListener("change", setFullName);
+  document.getElementById("sign_up_form_last_name").addEventListener("change", setFullName);
+  
+  // We can safely use the .not-viewable-by-user selector, because the modal html is *not* rendered for signed-in users, so there's no risk
+  // of a "Create account modal" opening for them. (They're redirected straight to the /join page.)
+  $('a.not-viewable-by-user').on('click', function (evt) {
+    evt.preventDefault();
+    $modalEl.foundation('reveal', 'open');
+  });
+</script>
+
+<!-- / JS included javascript_app_data is directly executed by the page -->
+
+<!-- / loader.exec: any delayed JS from a page body is now run -->
+<script>
+  loader.exec();
+</script>
+<script defer='' src='https://script.tapfiliate.com/tapfiliate.js' type='text/javascript'></script>
+<script defer='' type='text/javascript'>
+window.addEventListener("load", function() {
+(function(t,a,p){t.TapfiliateObject=a;t[a]=t[a]||function(){
+(t[a].q=t[a].q||[]).push(arguments)}})(window,'tap');
+tap('create', '10694-267423', { integration: "javascript" });
+tap('detect');
+});
+</script>
+<!-- / until respond.js is working in production (where styles are served cross-domain), make the top bar menu icon clicks work when window is larger than breakpoint (see foundation.topbar.js breakpoint()) -->
+<!--[if lt IE 9]>
+<script> $('html').addClass('lt-ie9')</script>
+<![endif]-->
+</body>
+</html>
